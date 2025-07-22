@@ -1,6 +1,6 @@
-# SAiGE Chatbot API
+# SAiGE 챗봇 API 시연
 
-## Installation
+## 설치
 
 ```bash
 git clone https://github.com/yourusername/sage_chatbot.git
@@ -12,7 +12,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Configuration
+## 설정
 
 `.env` file을 생성하고 다음 세 코드와 OpenAI API key를 입력합니다:
 ```
@@ -21,7 +21,7 @@ REDIS_URL=redis://localhost:6379
 ENVIRONMENT=development
 ```
 
-## Run
+## 실행
 
 ```bash
 python main.py
@@ -29,7 +29,7 @@ python main.py
 
 API documentation: http://localhost:8000/docs
 
-## Example
+## 예시
 
 ### First Request
 ```bash
@@ -71,12 +71,12 @@ curl -X POST "http://localhost:8000/api/v1/chat" \
 }
 ```
 
-### Get Chat History
+### 챗 히스토리 확인
 ```bash
 curl -X GET "http://localhost:8000/api/v1/chat/test_user_001/history"
 ```
 
-### History Response
+### Response
 ```json
 {
   "session_id": "test_user_001",
